@@ -1,0 +1,57 @@
+========================================================================
+THIRD-PARTY SOFTWARE CREDITS
+========================================================================
+
+This project uses the following open-source software libraries. 
+We are deeply grateful to the original authors and communities 
+for their work.
+
+------------------------------------------------------------------------
+1. litellm
+------------------------------------------------------------------------
+* URL: https://github.com/BerriAI/litellm
+* License: MIT License
+* Copyright (c) 2023 Ishaan Jaffer
+
+------------------------------------------------------------------------
+2. httpx
+------------------------------------------------------------------------
+* URL: https://github.com/encode/httpx
+* License: BSD 3-Clause License
+* Copyright (c) 2019, Encode OSS Ltd.
+
+------------------------------------------------------------------------
+3. beautifulsoup4
+------------------------------------------------------------------------
+* URL: https://www.crummy.com/software/BeautifulSoup/
+* License: MIT License
+* Copyright (c) 2004-2023 Leonard Richardson
+
+------------------------------------------------------------------------
+4. PyYAML
+------------------------------------------------------------------------
+* URL: https://github.com/yaml/pyyaml
+* License: MIT License
+* Copyright (c) 2017-2021 Ingy döt Net
+* Copyright (c) 2006-2016 Kirill Simonov
+
+------------------------------------------------------------------------
+5. ChromaDB
+------------------------------------------------------------------------
+* URL: https://github.com/chroma-core/chroma
+* License: Apache License 2.0
+* Copyright (c) 2022 Chroma, Inc.
+
+------------------------------------------------------------------------
+6. NumPy
+------------------------------------------------------------------------
+* URL: https://numpy.org/
+* License: BSD 3-Clause License
+* Copyright (c) 2005-2023, NumPy Developers.
+
+------------------------------------------------------------------------
+7. scikit-learn
+------------------------------------------------------------------------
+* URL: https://scikit-learn.org/
+* License: BSD 3-Clause License
+* Copyright (c) 2007-2023 The scikit-learn developers.
