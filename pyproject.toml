@@ -1,0 +1,74 @@
+# =============================================================================
+# pyproject.toml — Python Project Blueprint
+# =============================================================================
+# Docs: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
+# =============================================================================
+
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "TODO: Add project description"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+authors = [
+    { name = "Raimu Rokku", email = "TODO@example.com" },
+]
+
+dependencies = [
+    # Add your dependencies here, e.g.:
+    # "fastapi>=0.115",
+    # "uvicorn[standard]>=0.34",
+    # "pydantic>=2.0",
+    # "httpx>=0.27",
+    # "pyyaml>=6.0",
+    # "duckdb>=1.0",
+    # "click>=8.1",
+    # "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.8",
+    "mypy>=1.13",
+]
+
+# Uncomment to define CLI entry points:
+# [project.scripts]
+# my-cli = "src.main:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+# =============================================================================
+# Ruff (Linter & Formatter)
+# =============================================================================
+
+[tool.ruff]
+target-version = "py312"
+line-length = 99
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+# =============================================================================
+# Pytest
+# =============================================================================
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+# =============================================================================
+# MyPy
+# =============================================================================
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true

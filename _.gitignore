@@ -1,16 +1,22 @@
+# =============================================================================
+# UNIVERSAL .GITIGNORE BLUEPRINT
+# =============================================================================
+# Covers: Python, Go, JavaScript/TypeScript, Rust, Java, C/C++, Ruby, PHP,
+#         Swift, Kotlin, Dart/Flutter, Terraform, Docker, and common tools.
+# Remove sections that don't apply to your project.
+# =============================================================================
+
+
 # =========================
-# Python-spezifische Dateien
+# Python
 # =========================
 
-# Byte-kompilierte / optimierte Dateien
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C-Erweiterungen
 *.so
 
-# Distribution / Paketierung
+# Distribution / Packaging
 build/
 develop-eggs/
 dist/
@@ -28,10 +34,9 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+*.whl
 
-# =========================
-# Virtuelle Umgebungen
-# =========================
+# Virtual Environments
 .env
 .venv
 env/
@@ -39,10 +44,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.python-version
 
-# =========================
-# Tests, Reports & Coverage
-# =========================
+# Tests & Coverage
 htmlcov/
 .tox/
 .nox/
@@ -56,51 +60,427 @@ coverage.xml
 .pytest_cache/
 pytestdebug.log
 
-# =========================
-# Jupyter Notebooks & Tools
-# =========================
+# Jupyter Notebooks
 .ipynb_checkpoints
 profile_default/
 ipython_config.py
 
+# Type Checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+
+# Linters / Formatters
+.ruff_cache/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Flask / Django
+instance/
+.webassets-cache
+*.sage.py
+db.sqlite3
+db.sqlite3-journal
+local_settings.py
+
+
 # =========================
-# IDEs & Betriebssystem
+# Go (Golang)
+# =========================
+
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.dylib
+*.test
+*.out
+
+# Go workspace
+go.work
+go.work.sum
+
+# Vendor directory (uncomment if you don't vendor)
+# vendor/
+
+# Go build cache
+*.o
+*.a
+
+
+# =========================
+# JavaScript / TypeScript
+# =========================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+lerna-debug.log*
+
+# Build output
+dist/
+.next/
+.nuxt/
+.output/
+.svelte-kit/
+out/
+
+# Caches
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.turbo/
+
+# Environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Parcel / Vite / Webpack
+.parcel-cache/
+.cache/
+
+
+# =========================
+# Rust
+# =========================
+
+target/
+Cargo.lock
+**/*.rs.bk
+
+
+# =========================
+# Java / Kotlin / Gradle / Maven
+# =========================
+
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+
+# =========================
+# C / C++
+# =========================
+
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.exe
+*.out
+*.dSYM/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+
+# =========================
+# Ruby
+# =========================
+
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/tmp/
+/.bundle/
+/vendor/bundle
+.byebug_history
+
+
+# =========================
+# PHP
+# =========================
+
+/vendor/
+composer.phar
+composer.lock
+
+
+# =========================
+# Swift / Xcode
+# =========================
+
+.build/
+DerivedData/
+*.xcuserstate
+*.xcworkspace
+!*.xcworkspace/contents.xcworkspacedata
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.moved-aside
+*.hmap
+Pods/
+
+
+# =========================
+# Dart / Flutter
+# =========================
+
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+*.g.dart
+*.freezed.dart
+
+
+# =========================
+# Terraform / Infrastructure
+# =========================
+
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+!*.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+
+# =========================
+# Docker
+# =========================
+
+# Don't ignore Dockerfile or docker-compose by default
+*.dockerignore
+
+
+# =========================
+# Databases
+# =========================
+
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+*.duckdb.wal
+*.mdb
+*.accdb
+
+
+# =========================
+# Data directories
+# =========================
+
+data/
+
+
+# =========================
+# IDEs & Editors
 # =========================
 
 # VS Code
 .vscode/
 *.code-workspace
 
-# PyCharm / IntelliJ
+# JetBrains (PyCharm, GoLand, IntelliJ, WebStorm, etc.)
 .idea/
 *.iml
+*.iws
+*.ipr
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+tags
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Zed
+.zed/
+
+
+# =========================
+# Operating Systems
+# =========================
 
 # macOS
 .DS_Store
+.DS_Store?
 .AppleDouble
 .LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
 
 # Windows
 Thumbs.db
+Thumbs.db:encryptable
 ehthumbs.db
+ehthumbs_vista.db
 Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
 
 # =========================
-# Sensible Daten & Konfiguration
+# Secrets & Sensitive Data
 # =========================
+
 .env
+.env.*
+!.env.example
 .flaskenv
 secrets.json
 .secrets/
+*.pem
+*.key
+!*.key/
+*.p12
+*.pfx
+*.crt
+*.cer
+credentials.json
+service-account*.json
+token.json
+
 
 # =========================
-# DuckDB Datenbanken
+# Logs
 # =========================
-*.duckdb
-*.duckdb.wal
-data/
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pip-log.txt
+pip-delete-this-directory.txt
+
 
 # =========================
-# Claude Code (Worktrees, Plans)
+# Archives & Binaries
 # =========================
+
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.bz2
+*.iso
+*.dmg
+
+# Large media (uncomment if needed)
+# *.mp4
+# *.mov
+# *.avi
+# *.mp3
+# *.wav
+
+
+# =========================
+# AI & ML
+# =========================
+
+# Model files (large)
+*.onnx
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.safetensors
+*.gguf
+*.ggml
+*.bin
+
+# MLflow / Weights & Biases
+mlruns/
+wandb/
+lightning_logs/
+
+# Hugging Face cache
+.cache/huggingface/
+
+
+# =========================
+# Claude Code
+# =========================
+
 .claude/
+
+
+# =========================
+# Miscellaneous
+# =========================
+
+# Backup files
+*.bak
+*.backup
+*.orig
+*.tmp
+*.temp
+
+# OS-generated thumbnails
+._*

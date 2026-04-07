@@ -1,0 +1,39 @@
+# =============================================================================
+# config.yaml — Project Configuration Template
+# =============================================================================
+# Copy this file to config.yaml and adjust values for your environment.
+# NEVER commit config.yaml — it may contain sensitive data.
+# =============================================================================
+
+# Project metadata
+project:
+  name: "my-project"
+  version: "0.1.0"
+  environment: "development"  # development | staging | production
+
+# Server / API settings (if applicable)
+# server:
+#   host: "0.0.0.0"
+#   port: 8000
+#   workers: 4
+#   reload: true  # disable in production
+
+# Database
+# database:
+#   type: "duckdb"          # duckdb | sqlite | postgresql
+#   path: "data/app.duckdb" # for file-based DBs
+#   # url: "postgresql://user:pass@localhost:5432/dbname"  # for PostgreSQL
+
+# Logging
+logging:
+  level: "INFO"             # DEBUG | INFO | WARNING | ERROR
+  format: "text"            # text | json
+  # file: "logs/app.log"   # uncomment to log to file
+
+# AI / LLM settings (if applicable)
+# ai:
+#   provider: "anthropic"   # anthropic | openai | ollama | litellm
+#   model: "claude-sonnet-4-6"
+#   temperature: 0.7
+#   max_tokens: 4096
+#   # base_url: "http://localhost:11434"  # for Ollama

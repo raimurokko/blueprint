@@ -2,56 +2,80 @@
 THIRD-PARTY SOFTWARE CREDITS
 ========================================================================
 
-This project uses the following open-source software libraries. 
-We are deeply grateful to the original authors and communities 
+This project uses the following open-source software libraries.
+We are deeply grateful to the original authors and communities
 for their work.
 
 ------------------------------------------------------------------------
-1. litellm
+ TEMPLATE — Copy and fill in for each dependency:
 ------------------------------------------------------------------------
-* URL: https://github.com/BerriAI/litellm
-* License: MIT License
-* Copyright (c) 2023 Ishaan Jaffer
+ * Name:      [Library Name]
+ * URL:       [Repository or Homepage URL]
+ * License:   [License Type]
+ * Copyright: [Copyright Holder and Year]
+------------------------------------------------------------------------
+
+
+========================================================================
+AI MODELS & GENERATIVE CONTENT CREDITS
+========================================================================
+
+The following AI models and services were used during the development
+of this project. Credits go to the respective model creators and
+organizations.
+
+See AI-TRANSPARENCY.md for full details on how AI is used and our
+human-in-the-loop guarantee.
 
 ------------------------------------------------------------------------
-2. httpx
+ Development Assistance (Pair Programming, Code Reviews, Documentation)
 ------------------------------------------------------------------------
-* URL: https://github.com/encode/httpx
-* License: BSD 3-Clause License
-* Copyright (c) 2019, Encode OSS Ltd.
+
+ * Model:     Claude Opus 4.6
+ * Provider:  Anthropic, PBC (San Francisco, CA, USA)
+ * URL:       https://www.anthropic.com
+ * Usage:     Code assistance, reviews, documentation, comments
 
 ------------------------------------------------------------------------
-3. beautifulsoup4
+ TEMPLATE — Add additional AI development tools here:
 ------------------------------------------------------------------------
-* URL: https://www.crummy.com/software/BeautifulSoup/
-* License: MIT License
-* Copyright (c) 2004-2023 Leonard Richardson
+ * Model:     [Model Name and Version]
+ * Provider:  [Company Name and Location]
+ * URL:       [Provider URL]
+ * Usage:     [Brief description of how the model was used]
+------------------------------------------------------------------------
+
 
 ------------------------------------------------------------------------
-4. PyYAML
+ AI-Generated Media (Images, Diagrams, Icons, Audio, Video)
 ------------------------------------------------------------------------
-* URL: https://github.com/yaml/pyyaml
-* License: MIT License
-* Copyright (c) 2017-2021 Ingy döt Net
-* Copyright (c) 2006-2016 Kirill Simonov
+
+ Per EU AI Act Article 50(2), all AI-generated media must be labeled.
+ List every AI-generated asset below.
+
+ TEMPLATE:
+ * File:      [path/to/file.png]
+ * Model:     [Model Name] ([Provider])
+ * Prompt:    [Brief description of the prompt used, if applicable]
+ * Date:      [YYYY-MM-DD]
+
+ Example:
+ * File:      docs/images/architecture-overview.png
+ * Model:     DALL-E 3 (OpenAI)
+ * Prompt:    "System architecture diagram, isometric, clean"
+ * Date:      2026-04-07
 
 ------------------------------------------------------------------------
-5. ChromaDB
-------------------------------------------------------------------------
-* URL: https://github.com/chroma-core/chroma
-* License: Apache License 2.0
-* Copyright (c) 2022 Chroma, Inc.
 
-------------------------------------------------------------------------
-6. NumPy
-------------------------------------------------------------------------
-* URL: https://numpy.org/
-* License: BSD 3-Clause License
-* Copyright (c) 2005-2023, NumPy Developers.
+ (No AI-generated media in this project yet.)
 
-------------------------------------------------------------------------
-7. scikit-learn
-------------------------------------------------------------------------
-* URL: https://scikit-learn.org/
-* License: BSD 3-Clause License
-* Copyright (c) 2007-2023 The scikit-learn developers.
+
+========================================================================
+ACKNOWLEDGMENTS
+========================================================================
+
+ * Open-source communities for the tools and libraries we depend on.
+ * AI model providers for development assistance tooling.
+ * All contributors who have signed the DCO and submitted improvements.
+
+========================================================================
